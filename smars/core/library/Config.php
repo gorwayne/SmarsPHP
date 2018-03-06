@@ -31,7 +31,7 @@ class Config {
                 return $default;
             }
         } else {
-            throw new \Exception('找不到配置文件'.$file);
+            throw new \Exception('找不到配置文件['.$file.']');
         }
     }
 }

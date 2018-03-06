@@ -7,7 +7,7 @@
  */
 
 define('SMARS', str_replace('\\','/',realpath(dirname(__FILE__).'/')));
-define('CORE', SMARS.'/core');
+define('CORE', SMARS.'/smars/core');
 define('APP', SMARS.'/app');
 define('MODULE', '\App');
 

@@ -14,7 +14,7 @@ class Config {
         $file = $keyArray[0];
         $name = $keyArray[1];
 
-        $configFile = SMARS.'/core/config/'.$file.'.php';
+        $configFile = CORE.'/config/'.$file.'.php';
         if(is_file($configFile)) {
             $conf = include $configFile;
             if(isset($conf[$name])) {

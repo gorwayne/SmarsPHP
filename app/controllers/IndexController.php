@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use Core\Library\Controller;
+use Smars\Core\Library\Controller;
 
 class IndexController extends Controller {
 

@@ -32,14 +32,10 @@ class Route {
                     }
                     $i += 2;
                 }
-                d($_GET);
             }
         } else {
             $this->controller = 'index';
             $this->action = 'index';
         }
-
-        d($this->controller);
-        d($this->action);
     }
 }

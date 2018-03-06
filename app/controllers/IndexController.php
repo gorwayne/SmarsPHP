@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
 
 class IndexController {
 
     public function index() {
-        d('controller index');
+        dd('controller index');
     }
 }

@@ -10,10 +10,12 @@ class Smars {
 
     static public function run() {
         $route = new Route();
-        $controllerClass = $route->controller;
+        $controllerClass = ucfirst($route->controller);
         $action = $route->action;
+
         $controllerFile = APP.'/controllers/'.$controllerClass.'Controller.php';
-        $controllerClass = MODULE.'\Controller\\'.$controllerClass.'Controller';
+        $controllerClass = MODULE.'\Controllers\\'.$controllerClass.'Controller';
+
         if(is_file($controllerFile)) {
             include $controllerFile;
             $controller = new $controllerClass();

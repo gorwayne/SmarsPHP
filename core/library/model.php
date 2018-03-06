@@ -2,9 +2,9 @@
 
 namespace Core\Library;
 
-class model extends \PDO {
+class Model extends \Illuminate\Database\Eloquent\Model {
 
-    public function __construct($dsn, $username, $passwd, $options) {
-        parent::__construct($dsn, $username, $passwd, $options);
+    public function __construct(array $attributes = []) {
+        parent::__construct($attributes);
     }
 }

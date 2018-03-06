@@ -23,6 +23,12 @@ if(DEBUG) {
 } else {
     ini_set('display_errors', 'Off');
 }
+
+//Eloquent ORM
+$capsule = new Illuminate\Database\Capsule\Manager();
+$capsule->addConnection(require CORE.'/config/database.php');
+$capsule->bootEloquent();
+
 include CORE.'/common/function.php';
 include CORE.'/smars.php';
 

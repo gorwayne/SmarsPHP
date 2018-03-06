@@ -21,7 +21,7 @@ class Route {
                     $this->action = $pathArray[3];
                     unset($pathArray[3]);
                 } else {
-                    $this->action = 'index';
+                    $this->action = Config::get('route.default_action');
                 }
                 //把URL多余部分转换为GET  index/index/id/1
                 $pathCount = count($pathArray) + 4;
@@ -34,8 +34,8 @@ class Route {
                 }
             }
         } else {
-            $this->controller = 'index';
-            $this->action = 'index';
+            $this->controller = Config::get('route.default_controller');
+            $this->action = Config::get('route.default_action');
         }
     }
 }

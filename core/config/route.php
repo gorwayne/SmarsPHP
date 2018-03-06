@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'CONTROLLER' => 'IndexController',
-    'ACTION'=>'index'
+    'default_controller' => 'Index',
+    'default_action'=>'index'
 ];

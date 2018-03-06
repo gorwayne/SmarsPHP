@@ -1,0 +1,14 @@
+{
+  "name": "SmarsPHP",
+  "description": "A Light PHP Web Framework",
+  "type": "Framework",
+  "keywords": [
+    "PHP", "PHP Framework"
+  ],
+  "require": {
+    "php":">=5.6.0",
+    "illuminate/database": "*",
+    "filp/whoops":"*",
+    "symfony/var-dumper": "*"
+  }
+}

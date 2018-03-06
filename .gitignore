@@ -1,0 +1,7 @@
+/vendor
+/.idea
+.idea/
+
+#upupw server
+.uini
+up-rewrite.conf

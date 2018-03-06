@@ -21,7 +21,7 @@ class Smars {
             $controller = new $controllerClass();
             $controller->$action();
         } else {
-            throw new \Exception('找不到控制器'.$controllerClass);
+            throw new \Exception('找不到控制器['.$controllerClass.']');
         }
     }
 

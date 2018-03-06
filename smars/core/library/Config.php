@@ -15,10 +15,17 @@ class Config {
         $name = $keyArray[1];
 
         $configFile = CORE.'/config/'.$file.'.php';
+        $customConfigFile = APP.'/config/'.$file.'.php';
         if(is_file($configFile)) {
             $conf = include $configFile;
             if(isset($conf[$name])) {
                 self::$configCache['$file'] = $conf;
+                if(is_file($customConfigFile)) {
+                    $customConf = include  $customConfigFile;
+                    if(isset($customConf[$name])) {
+                        return $customConf[$name];
+                    }
+                }
                 return $conf[$name];
             } else {
                 return $default;

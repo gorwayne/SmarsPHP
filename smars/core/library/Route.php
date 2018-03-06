@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Library;
+namespace Smars\Core\Library;
 
 class Route {
 

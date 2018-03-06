@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Library;
+namespace Smars\Core\Library;
 
 class Config {
     //TODO 加载app目录下的配置文件，覆盖系统默认的配置内容

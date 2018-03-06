@@ -1,8 +1,8 @@
 <?php
 
-namespace Core;
+namespace Smars\Core;
 
-use Core\Library\Route;
+use Smars\Core\Library\Route;
 
 class Smars {
 

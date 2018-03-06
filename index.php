@@ -32,6 +32,6 @@ $capsule->bootEloquent();
 include CORE.'/common/function.php';
 include CORE.'/smars.php';
 
-spl_autoload_register('\Core\Smars::load');
+spl_autoload_register('Smars\Core\Smars::load');
 
-\Core\Smars::run();
+Smars\Core\Smars::run();

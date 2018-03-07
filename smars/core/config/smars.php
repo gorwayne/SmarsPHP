@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'app_name' => 'Smars PHP'
+    'app_name' => 'Smars PHP',
+    'route_type' => 0
 ];

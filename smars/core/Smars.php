@@ -6,7 +6,7 @@ use Smars\Core\Library\Route;
 
 class Smars {
 
-    public static $classMap = array();
+    public static $classMap = [];
 
     static public function run() {
         $route = new Route();

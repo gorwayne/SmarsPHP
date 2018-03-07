@@ -9,6 +9,7 @@
     "php":">=5.6.4",
     "illuminate/database": "5.4.*",
     "filp/whoops":"*",
-    "symfony/var-dumper": "*"
+    "symfony/var-dumper": "*",
+    "twig/twig":"*"
   }
 }
